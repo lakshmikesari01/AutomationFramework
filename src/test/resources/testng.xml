@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercise Regression Suite" verbose="1" parallel="tests" thread-count="2">
+
+    <!-- ── Smoke Suite ─────────────────────────────────────────────────── -->
+    <test name="Smoke - User Registration">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.tests.UserRegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="Smoke - Product Search and Browse">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.tests.ProductSearchAndBrowseTest"/>
+        </classes>
+    </test>
+
+    <test name="Smoke - Add To Cart">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.tests.AddToCartTest"/>
+        </classes>
+    </test>
+
+    <test name="Smoke - Contact Us">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.tests.ContactUsTest"/>
+        </classes>
+    </test>
+
+</suite>
