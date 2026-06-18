@@ -108,7 +108,7 @@ public class UserRegistrationTest extends BaseTest {
 
         // Note: login() returns HomePage assuming success. For error scenario we
         // verify on the login page directly:
-        // Re-open and check
+        // open and check
         LoginPage lp = new LoginPage(getDriver()).open();
         lp.login("nonexistent_qa_user@example.com", "WrongPassword999!");
         lp.assertLoginError();
